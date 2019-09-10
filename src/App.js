@@ -12,6 +12,14 @@ import './App.css';
 //      has a button to add the fruit to the cart
 // <Cart /> component that renders the cart (loops over array)
 
+function Fruit(props) {
+  // what properties do we need inside of data arg, to flesh out our fruit
+  const { name, addToCart } = props;
+  return (
+    
+  );
+}
+
 function App() {
   return (
     <div className="App">
