@@ -12,18 +12,23 @@ import './App.css';
 //      has a button to add the fruit to the cart
 // <Cart /> component that renders the cart (loops over array)
 
-function Fruit(props) {
+function Fruit(props) { // declaration of the Fruit component
   // what properties do we need inside of data arg, to flesh out our fruit
   const { name, addToCart } = props;
   return (
-    
+    <div>
+      <h3>{name}</h3>
+      <button onClick={addToCart}>Add To Cart</button>
+    </div>
   );
 }
 
 function App() {
   return (
     <div className="App">
-      hello world
+      Here's a fruit:
+      {/* here is the invocation of Fruit (using JSX) */}
+      <Fruit name="pear" addToCart={() => console.log('adding pear')} />
     </div>
   );
 }
