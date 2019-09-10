@@ -33,7 +33,7 @@ function Fruits(props) {
     <div>
       {
         fruits.map(
-          fruitName => (
+          (fruitName) => (
             <Fruit
               key={fruitName}
               name={fruitName}
