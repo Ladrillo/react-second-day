@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Fruit from './Fruit';
 import './App.css';
 
 // Market app
@@ -11,17 +12,6 @@ import './App.css';
 // <Fruit /> component that renders a single fruit
 //      has a button to add the fruit to the cart
 // <Cart /> component that renders the cart (loops over array)
-
-function Fruit(props) { // declaration of the Fruit component
-  // what properties do we need inside of data arg, to flesh out our fruit
-  const { name, addToCart } = props;
-  return (
-    <div>
-      <span>{name}</span>
-      <button onClick={evt => addToCart(name)}>Add To Cart</button>
-    </div>
-  );
-}
 
 // .map() ----> returns a value which is an array
 // .forEach()  -> doesn't return anything
