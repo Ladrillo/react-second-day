@@ -45,7 +45,7 @@ function Fruits(props) {
   )
 }
 
-function App() {
+function Market() {
   return (
     <div className="App">
       <Fruits
@@ -56,4 +56,4 @@ function App() {
   );
 }
 
-export default App;
+export default Market;
