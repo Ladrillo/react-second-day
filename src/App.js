@@ -52,10 +52,13 @@ function Market() {
   // the other slice of state is called cart -> []
   const [stock, setStock] = useState({ fruits: ['pear', 'apple', 'orange'], meats: [] });
   const [cart, setCart] = useState([]);
+  const addToCart = (item) => {
+    // implement
+  }
   return (
     <div className="App">
       { /* render the Fruits again, but using the stock :)*/  }
-      <Fruits fruits={stock.fruits} />
+      <Fruits fruits={stock.fruits} addToCart={addToCart} />
     </div>
   );
 }
