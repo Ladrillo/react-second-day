@@ -14,21 +14,27 @@ import './App.css';
 
 function Fruit(props) { // declaration of the Fruit component
   // what properties do we need inside of data arg, to flesh out our fruit
-  const { name, addToCart } = props;
+  // const { name, addToCart } = props;
   return (
     <div>
-      <h3>{name}</h3>
-      <button onClick={addToCart}>Add To Cart</button>
+      <h3>{props.name}</h3>
+      <button onClick={props.addToCart}>Add To Cart</button>
     </div>
   );
 }
 
 function App() {
+
+  const callback = () => {
+    console.log('adding this fruit')
+  }
+
   return (
     <div className="App">
       Here's a fruit:
       {/* here is the invocation of Fruit (using JSX) */}
-      <Fruit name="pear" addToCart={() => console.log('adding pear')} />
+      <Fruit name="pear" addToCart={callback} />
+      <Fruit name="apple" addToCart={callback} />
     </div>
   );
 }
