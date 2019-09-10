@@ -23,6 +23,9 @@ function Fruit(props) { // declaration of the Fruit component
   );
 }
 
+// .map() ----> returns a value which is an array
+// .forEach()  -> doesn't return anything
+
 function Fruits(props) {
   // what props do we need?
   const { fruits, addToCart } = props; // ['apple', 'banana']
@@ -40,7 +43,7 @@ function Fruits(props) {
 function App() {
   return (
     <div className="App">
-
+      <Fruits fruits={['apple', 'orange', 'pear']} addToCart={() => console.log('adding fruit')} />
     </div>
   );
 }
