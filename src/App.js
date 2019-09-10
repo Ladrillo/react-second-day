@@ -60,8 +60,10 @@ function Market() {
 
   // FUNCTIONS THAT ACTUATE ON SAID SLICES OF STATE
   const addToCart = (item) => {
-    // implement
-  }
+    // return keyword optional
+    return setCart(cart.concat(item));
+  };
+
   return (
     <div className="App">
       { /* render the Fruits again, but using the stock :)*/  }
