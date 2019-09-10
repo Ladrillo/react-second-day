@@ -1,24 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+// Market app
+// There will be a top-level Market component
+// Market component will hold app state
+//      * stock (available articles) --> { fruits: [], meats: [] }
+//      * cart  (user fills it) --> []
+
+// <Fruits /> component that renders all the fruits (loops over array)
+// <Fruit /> component that renders a single fruit
+//      has a button to add the fruit to the cart
+// <Cart /> component that renders the cart (loops over array)
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      hello world
     </div>
   );
 }
