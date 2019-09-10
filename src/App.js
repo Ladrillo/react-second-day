@@ -50,8 +50,15 @@ function Market() {
   // one slice is stock, is initialized like so 
   //        { fruits: ['pear', 'apple'], meats: [] }
   // the other slice of state is called cart -> []
-  const [stock, setStock] = useState({ fruits: ['pear', 'apple', 'orange'], meats: [] });
+
+  // SLICES OF STATE AND CORRESPONDING STATE SETTERS
+  const [stock, setStock] = useState({
+    fruits: ['pear', 'apple', 'orange'],
+    meats: [],
+  });
   const [cart, setCart] = useState([]);
+
+  // FUNCTIONS THAT ACTUATE ON SAID SLICES OF STATE
   const addToCart = (item) => {
     // implement
   }
