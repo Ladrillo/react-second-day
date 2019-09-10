@@ -46,12 +46,13 @@ function Fruits(props) {
 }
 
 function Market() {
+  // get 2 slices of state working
+  // one slice is stock, is initialized like so 
+  //        { fruits: ['pear', 'apple'], meats: [] }
+  // the other slice of state is called cart -> []
   return (
     <div className="App">
-      <Fruits
-        fruits={['apple', 'orange', 'pear']}
-        addToCart={() => console.log('adding fruit')}
-      />
+
     </div>
   );
 }
