@@ -48,7 +48,10 @@ function Fruits(props) {
 function App() {
   return (
     <div className="App">
-      <Fruits fruits={['apple', 'orange', 'pear']} addToCart={() => console.log('adding fruit')} />
+      <Fruits
+        fruits={['apple', 'orange', 'pear']}
+        addToCart={() => console.log('adding fruit')}
+      />
     </div>
   );
 }
