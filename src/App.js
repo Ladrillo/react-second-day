@@ -66,12 +66,7 @@ function Market() {
 
   return (
     <div className="App">
-      { /* render the Fruits again, but using the stock :)*/  }
       <Fruits fruits={stock.fruits} addToCart={addToCart} />
-
-
-      {/* I want to visualize the cart */}
-
       {
         cart.length
           ? cart.map((item, idx) => <div key={idx}>{item}</div>)
